@@ -1,53 +1,134 @@
 <html>
     <head>
-        <title>Document</title>
+        <title>HTML Practice Page</title>
+        <meta>
+        <style>
+            h1:hover{
+                text-align: center;
+                font-size: xx-large;
+                text-shadow: 3px 3px 5px blue, -3px -3px 5px red;
+            }
+            h1{
+                border-style: solid;
+                border-width: 3px;
+                border-color: brown;
+                border-radius: 20px;
+            }
+            h3{
+                color: #D291BC;opacity: 0.6;
+                letter-spacing: 0.2cm;
+            }
+            p{
+                border-style: solid;
+                border-radius: 3cm;
+                background-color: rgb(208, 130, 130);
+                padding : 30px;
+            }
+            #p1{
+                border-style: solid;
+                border-radius: 3cm;
+                border-width: 0.3cm;
+                background-color: chartreuse;
+                transform: rotate(1deg);
+            }
+            hr{
+                width: 10cm;
+                height: 0.5cm;
+                background-color: black;
+            }
+            pre{
+                font-family: monospace;
+                background-color: darkgreen;
+                border-radius: 3cm;
+            }
+            ul{
+                list-style: none;
+                letter-spacing: .1cm;
+                background-color: red;
+            }
+            ol{
+                font-weight: bold;
+                list-style-type: upper-roman;
+                letter-spacing: .1cm;
+            }
+            a{
+                text-decoration: none;
+            }
+            a:hover{
+                text-decoration: underline;
+            }
+            div{
+                border-style: solid;
+                border-radius: .3cm;
+                width: 300px;
+                height: 100px;
+                background-color: rgb(78, 218, 115);
+                box-shadow: 3px 3px 5px rgb(0, 234, 255), -3px -3px 5px red;
+            }
+            form:hover{
+                padding: 1cm;
+                cursor: pointer;
+                border-style: solid;
+                border-radius: 3cm;
+                transform: scale(30);
+                background-color: white;
+            }
+            footer{
+                font-size:small;
+                color: black;
+                text-align: center;
+            }
+            body{
+                border: solid;
+                margin: 3cm;
+                padding: 3cm;
+                max-width: 40cm;
+            }
+        
+
+        </style>
     </head>
-    <style>
-        .box1{
-        border: solid;
-        padding: .3cm;
-        border-width: 0.1cm;
-        background-color: rgb(69, 69, 69);
+    <body style="background-color: aquamarine;">
+        <h1 id="one" style="text-align: center;">Main Heading</h1>
+        <h3 align="center">Sub Heading</h3>
+        <p> 
+            <b>This</b> 
+            <strong>page</strong> 
+            <i>is a</i>  
+            <em>HTML Practice page</em> 
+        </p> 
+        <p id="p1">This page is HTML Practice page</p>
+        <br>
+        <hr style="color: blue;">
+        <pre style="color: rgb(47, 255, 0);">
+            This page is a HTML Practice Page
+        </pre>
+        <ul class="supplies">                               
+            <li>milk</li>                     
+            <li>eggs</li>
+            <li>bread</li>
+            <li>coffee supplies</li>
+        </ul>
+            <hr>
+        <ol id="two">                                  
+            <li>morning bath</li>
+            <li>break fast</li>
+            <li>go to class</li>
+        </ol>
+        <hr>
+        <a class="git" style="color: darkcyan;"href="https://github.com/ninad2008"
+        target="_blank">
+        github
+        </a>
+        <hr>
+        <div>My name is <span style="color: chartreuse;">Ninad</span> I study in ITM</div>
+        <form id="three">
+        <input type="submit" style="color: rgb(215, 119, 212);">
+        </form>
+        <footer class="foot" style="font-size: small;">
+        The end
+        </footer>
         
-        }
-        .box2{
-        border: solid;
-        margin: 20;
-        padding: 0.5cm;
-        border-color: blue;
-        border-width: .1cm;
-        background-color: rgb(69, 69, 69);
-        
-        }
-        .box3{
-        border: dashed;
-        margin: 30;
-        padding: 0.3cm;
-        border-color: brown;
-        border-width: 0.1cm;
-        background-color: rgb(69, 69, 69);
-        
-        }
-        body{
-            background-color: beige;
-        }
-    </style>
-<body>
 
-    <div class="box1" >
-        This is BOX 1 content
-    </div>
-    <br>
-
-    <div class="box2" >
-        This is BOX 2 content
-    </div>
-    <br>
-
-    <div class="box3" >
-        This is BOX 3 content
-    </div>
-    <br>
-
-</body>
+    </body>
 </html>
